@@ -257,6 +257,69 @@
             padding: 40px 24px 20px;
         }
 
+        .welcome-card {
+            position: relative;
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 24px;
+            align-items: center;
+            padding: 24px;
+            margin-bottom: 32px;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(100, 255, 218, 0.18);
+            box-shadow: 0 26px 70px rgba(0, 0, 0, 0.22);
+            animation: floatWelcome 6s ease-in-out infinite;
+        }
+
+        .welcome-card img {
+            width: 100%;
+            min-width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: 0 18px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-copy h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .welcome-copy p {
+            color: #d3e0ff;
+            line-height: 1.7;
+            max-width: 720px;
+        }
+
+        .welcome-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 18px;
+            border-radius: 999px;
+            background: rgba(100, 255, 218, 0.14);
+            color: #c7f0dc;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+            width: fit-content;
+        }
+
+        @keyframes floatWelcome {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
         .hero {
             position: relative;
             overflow: hidden;
@@ -862,6 +925,15 @@
         </nav>
 
         <main id="home" class="container">
+            <section class="welcome-card">
+                <img src="sign2speech.jpeg" alt="Welcome to Sign2Speech" />
+                <div class="welcome-copy">
+                    <div class="welcome-badge">Welcome</div>
+                    <h2>Welcome to Sign2Speech</h2>
+                    <p>Discover our AI-powered sign language translation experience — built to greet every visitor with
+                        a friendly note and smooth animated welcome motion.</p>
+                </div>
+            </section>
             <section class="hero">
                 <div class="hero-copy">
                     <span class="eyebrow">AI Sign Language Recognition</span>
