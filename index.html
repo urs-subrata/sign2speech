@@ -33,103 +33,6 @@
             animation: fadeInOverlay 0.8s ease-in-out;
         }
 
-        .page-eye {
-            position: fixed;
-            top: 40%;
-            right: 40px;
-            width: 120px;
-            height: 70px;
-            border-radius: 999px;
-            background: radial-gradient(circle at 45% 45%, #f7fbff 30%, #cbe7ff 60%, #8cc8f6 100%);
-            border: 1px solid rgba(255, 255, 255, 0.16);
-            box-shadow: 0 28px 90px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.12);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 15;
-            pointer-events: none;
-            overflow: hidden;
-        }
-
-        .page-eye::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            border-radius: 999px;
-            background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.4), transparent 45%);
-        }
-
-        .page-eye-inner {
-            position: relative;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #0a192f;
-            box-shadow: inset 0 0 0 6px rgba(100, 255, 218, 0.18);
-            animation: eyeGaze 6s ease-in-out infinite, eyeBlink 5.5s steps(2, end) infinite;
-        }
-
-        .page-eye-inner::after {
-            content: "";
-            position: absolute;
-            top: 8px;
-            left: 9px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.85);
-            filter: blur(0.5px);
-        }
-
-        @keyframes eyeGaze {
-
-            0%,
-            100% {
-                transform: translate(0, 0);
-            }
-
-            15% {
-                transform: translate(10px, -5px);
-            }
-
-            30% {
-                transform: translate(-12px, -2px);
-            }
-
-            45% {
-                transform: translate(8px, 6px);
-            }
-
-            60% {
-                transform: translate(-6px, 9px);
-            }
-
-            75% {
-                transform: translate(5px, -8px);
-            }
-
-            90% {
-                transform: translate(-2px, 4px);
-            }
-        }
-
-        @keyframes eyeBlink {
-
-            0%,
-            65%,
-            100% {
-                height: 40px;
-            }
-
-            67% {
-                height: 4px;
-            }
-
-            69% {
-                height: 40px;
-            }
-        }
-
         @keyframes fadeInOverlay {
             from {
                 opacity: 0;
@@ -974,9 +877,6 @@
 
 <body>
     <div class="overlay">
-        <div class="page-eye" aria-hidden="true">
-            <div class="page-eye-inner"></div>
-        </div>
         <nav>
             <a class="brand" href="#home">
                 <div class="logo-icon" aria-hidden="true">
@@ -1178,8 +1078,8 @@
                     <div class="download-top">
                         <img src="app-icon.svg" alt="Sign2Speech app icon" class="app-icon">
                         <div class="download-info">
-                            <h2>Download the App</h2>
-                            <p>Click the link to download our app.</p>
+                            <h2>Download Our App</h2>
+                            <p>Click the button below to download Sign2Speech from the Play Store.</p>
                         </div>
                     </div>
                     <div class="download-actions">
@@ -1187,7 +1087,7 @@
                             href="https://play.google.com/store/apps/details?id=com.ishaara.signify" target="_blank"
                             rel="noopener noreferrer">
                             <img class="play-badge" src="play-badge.svg" alt="Get it on Google Play">
-                            <span>Get it on Google Play</span>
+                            <span>Download on Play Store</span>
                         </a>
                     </div>
                 </div>
