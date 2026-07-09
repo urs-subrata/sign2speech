@@ -776,6 +776,89 @@
             line-height: 1.6;
         }
 
+        .download-card {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: stretch;
+            background: linear-gradient(180deg, rgba(12, 26, 48, 0.6), rgba(18, 36, 64, 0.55));
+            border: 1px solid rgba(100, 255, 218, 0.12);
+            border-radius: 20px;
+            padding: 22px;
+            padding-left: 22px;
+            box-shadow: 0 24px 60px rgba(8, 18, 32, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(6px);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .download-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 34px 80px rgba(8, 18, 32, 0.7);
+        }
+
+        .download-top {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+
+        .app-icon {
+            width: 96px;
+            height: 96px;
+            border-radius: 18px;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+            background: linear-gradient(135deg, rgba(100, 255, 218, 0.06), rgba(43, 177, 255, 0.06));
+            flex-shrink: 0;
+        }
+
+        .download-info h2 {
+            margin: 0 0 6px 0;
+            color: #64ffda;
+            font-size: 1.55rem;
+        }
+
+        .download-info p {
+            margin: 0;
+            color: #dfe8f7;
+            max-width: 640px;
+            opacity: 0.95;
+        }
+
+        .download-actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .button.primary.playstore {
+            display: inline-flex;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 18px;
+        }
+
+        .play-badge {
+            height: 22px;
+        }
+
+        @media (min-width: 820px) {
+            .download-card {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .download-top {
+                flex: 1;
+            }
+
+            .download-actions {
+                flex-shrink: 0;
+            }
+        }
+
         .footer {
             padding: 36px 24px 28px;
             margin-top: 20px;
@@ -1086,6 +1169,26 @@
                     <div class="team-member">
                         <h3>Subhranil Das</h3>
                         <p><a href="mailto:cse22089@cemk.ac.in">cse22089@cemk.ac.in</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="download" class="section">
+                <div class="download-card">
+                    <div class="download-top">
+                        <img src="app-icon.svg" alt="Sign2Speech app icon" class="app-icon">
+                        <div class="download-info">
+                            <h2>Download the App</h2>
+                            <p>Click the link to download our app.</p>
+                        </div>
+                    </div>
+                    <div class="download-actions">
+                        <a class="button primary playstore"
+                            href="https://play.google.com/store/apps/details?id=com.ishaara.signify" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="play-badge" src="play-badge.svg" alt="Get it on Google Play">
+                            <span>Get it on Google Play</span>
+                        </a>
                     </div>
                 </div>
             </section>

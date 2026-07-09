@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="pg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00A0FF"/>
+      <stop offset="50%" stop-color="#00E676"/>
+      <stop offset="100%" stop-color="#FFD600"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="60" rx="8" fill="#0a192f" />
+  <g transform="translate(12,10)">
+    <polygon points="0,0 18,9 0,18" fill="#34A853" />
+    <polygon points="0,0 18,9 0,18" transform="translate(6,0) rotate(15 9 9)" fill="#FBBC05" opacity="0.95"/>
+    <polygon points="0,0 18,9 0,18" transform="translate(3,-3) rotate(-15 9 9)" fill="#EA4335" opacity="0.95"/>
+  </g>
+  <text x="46" y="36" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#fff">Get it on Google Play</text>
+</svg>
